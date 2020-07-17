@@ -1,0 +1,8 @@
+/packages
+/.vs
+/SortingClothes/Bin
+/SQLdata/bin
+/SQLdata/obj
+*.log
+*.jpg
+*.dll

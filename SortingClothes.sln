@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SortingClothes", "SortingClothes\", "{BF21A5CB-C6E9-4782-A7C7-14E309045DD9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{38a09db7-622f-4e94-83fd-d34ac09724be}|SQLdata.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54692"
+		Debug.AspNetCompiler.PhysicalPath = "SortingClothes\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54692\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54692"
+		Release.AspNetCompiler.PhysicalPath = "SortingClothes\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54692\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54692"
+		SlnRelativePath = "SortingClothes\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLdata", "SQLdata\SQLdata.csproj", "{38A09DB7-622F-4E94-83FD-D34AC09724BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF21A5CB-C6E9-4782-A7C7-14E309045DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF21A5CB-C6E9-4782-A7C7-14E309045DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF21A5CB-C6E9-4782-A7C7-14E309045DD9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF21A5CB-C6E9-4782-A7C7-14E309045DD9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{38A09DB7-622F-4E94-83FD-D34AC09724BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A09DB7-622F-4E94-83FD-D34AC09724BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A09DB7-622F-4E94-83FD-D34AC09724BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A09DB7-622F-4E94-83FD-D34AC09724BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9349AC7-D68C-4ED7-8B1F-D745D1E9798F}
+	EndGlobalSection
+EndGlobal
