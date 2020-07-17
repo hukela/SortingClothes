@@ -1,7 +1,7 @@
 /packages
 /.vs
 /SortingClothes/Bin
-/SortingClothes/clothes_img/*.*
+/SortingClothes/clothes_img/*.jpg
 /SQLdata/bin
 /SQLdata/obj
 *.log
