@@ -49,5 +49,8 @@
     <Compile Include="PlaceList.cs" />
     <Compile Include="TypeList.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="script.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

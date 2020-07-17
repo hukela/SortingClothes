@@ -182,6 +182,44 @@ namespace SQLdata
                 return false;
         }
         /// <summary>
+        /// 更新衣服状态，在干净，使用，和需清洗之间互相切换
+        /// </summary>
+        /// <param name="id">要修改的衣服id</param>
+        /// <returns>执行是否成功</returns>
+        public bool UpdateOne(int id)
+        {
+            SqlCommand cmd = new SqlCommand("select condition from Clothes where id=@id;", con);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows.Count != 1)
+                return false;
+            string condition = dt.Rows[0]["condition"].ToString();
+            //改变原有状态
+            switch(condition)
+            {
+                case "a": condition = "c"; break;
+                case "b": condition = "a"; break;
+                case "c": condition = "b"; break;
+            }
+            cmd = new SqlCommand("update Clothes " +
+                "set condition=@condition, changeTime=@changeTime " +
+                "where id=@id", con);
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            cmd.Parameters.Add("@condition", SqlDbType.Char, 1).Value = condition;
+            cmd.Parameters.Add("@changeTime", SqlDbType.Date).Value = DateTime.Now;
+            //计算被影响的行数
+            int rows = 0;
+            con.Open();
+            rows = cmd.ExecuteNonQuery();
+            con.Close();
+            if (rows == 1)
+                return true;
+            else
+                return false;
+        }
+        /// <summary>
         /// 删除一条数据
         /// </summary>
         /// <param name="id">要删除的衣服id</param>
